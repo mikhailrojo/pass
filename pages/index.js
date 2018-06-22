@@ -1,8 +1,9 @@
 import {Provider} from 'react-redux';
-import {createStore} from 'redux';
+import ReduxThunk from 'redux-thunk'
+import {createStore, applyMiddleware} from 'redux';
 import reducer from '../src/reducers'
 
-const store = createStore(reducer);
+const store = createStore(reducer, applyMiddleware(ReduxThunk));
 
 import SearchContainer from '../src/containers/SearchContainer';
 
