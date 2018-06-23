@@ -8,11 +8,14 @@ export default class extends React.Component {
 		this.props.onChange(e.target.value);
 	};
 
-	render() {
-		const {onSubmit} = this.props;
+	onSubmit = (e) => {
+		e.preventDefault();
+		this.props.onSubmit(e);
+	};
 
+	render() {
 		return (
-			<div>
+			<form onSubmit={this.onSubmit}>
 				<Input
 					fullWidth
 					autoFocus
@@ -21,7 +24,7 @@ export default class extends React.Component {
 				/>
 				<Button
 					color='primary'
-					onClick={onSubmit}
+				    type="submit"
 				>
 					Найти
 				</Button>
@@ -29,9 +32,10 @@ export default class extends React.Component {
 					{`
 					width: 40%;
 					display: flex;
+					margin-top: 50vh;
 					`}
 				</style>
-			</div>
+			</form>
 		);
 	}
 }

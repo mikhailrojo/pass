@@ -30,8 +30,8 @@ class SearchContainer extends React.Component {
 						display: flex;
 						flex-direction: column;
 						height: 100vh;
-						justify-content: center;
 						align-items: center;
+						transition: all 1s ease-in;
 					`}
 				</style>
 				<Result count={occurrence} />

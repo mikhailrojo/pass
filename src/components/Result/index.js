@@ -11,7 +11,6 @@ export default ({count}) => {
 		<div>
 			<SnackbarContent
 				message={`Введенный пароль был скомпрометирован ${count} раз.`}
-				variant="success"
 			/>
 			<style jsx>
 				{`
