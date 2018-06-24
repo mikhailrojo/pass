@@ -18,7 +18,8 @@ class SearchContainer extends React.Component {
 			checkPassWord,
 			acceptUserInput,
 			occurrence,
-			isLoading
+			isLoading,
+			error
 		} = this.props;
 
 		return (
@@ -34,7 +35,7 @@ class SearchContainer extends React.Component {
 						transition: all 1s ease-in;
 					`}
 				</style>
-				<Result count={occurrence} />
+				<Result count={occurrence} error={error} />
 			</div>
 		)
 	}
