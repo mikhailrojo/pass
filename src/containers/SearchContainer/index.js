@@ -24,7 +24,7 @@ class SearchContainer extends React.Component {
 		return (
 			<div>
 				<Search onSubmit={checkPassWord} onChange={acceptUserInput} />
-				{isLoading && <CircularProgress />}
+				{isLoading && <CircularProgress style={{marginTop: '10px'}}/>}
 				<style jsx>
 					{`
 						display: flex;

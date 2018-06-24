@@ -19,7 +19,7 @@ export default class extends React.Component {
 				<Input
 					fullWidth
 					autoFocus
-					placeholder='Проверить надеждность пароля'
+					placeholder='Проверить уникальность пароля'
 					onChange={this.onChange}
 				/>
 				<Button
