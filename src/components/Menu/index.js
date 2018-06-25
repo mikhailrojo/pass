@@ -12,7 +12,7 @@ const menuInfo = [
 	`Это безопасно. Чтобы получить доступ к чему-либо - нужен логин и пароль. Не зная логина, знание пароля не имеет смысла.`,
 	`Когда вы вводите пароль, он в вашем же браузере хешируется алгоритмом sha-1
 	 и на проверку отправляются только 5 символов хэша. Введенные символы нигде не сохраняться.`,
-	'https://github.com/mikhailrojo'
+	'https://github.com/mikhailrojo/pass'
 ];
 
 const PaperMenu = ({index}) => {
@@ -58,12 +58,16 @@ export default class extends React.Component {
 					<Tab label="Зачем" />
 					<Tab label="Безопасность" />
 					<Tab label="Технология" />
-					<Tab label="Обо мне" />
+					<Tab label="Код проекта" />
 				</Tabs>
 				<PaperMenu index={value}/>
 				<style jsx>
 					{`
 						position: absolute;
+
+						@media screen and (max-width: 650px) {
+							display: none;
+						}
 					`}
 				</style>
 			</div>

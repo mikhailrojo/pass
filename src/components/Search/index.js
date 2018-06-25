@@ -33,6 +33,10 @@ export default class extends React.Component {
 					width: 40%;
 					display: flex;
 					margin-top: 50vh;
+
+					@media screen and (max-width: 650px) {
+						width: 100%;
+					}
 					`}
 				</style>
 			</form>
