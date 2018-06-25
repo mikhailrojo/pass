@@ -3,7 +3,6 @@
 import actions from '../actionTypes';
 
 export default (state = {}, action) => {
-	console.log(action);
 	switch(action.type) {
 		case actions.ACCEPT_USER_INPUT: {
 			return {
@@ -19,7 +18,6 @@ export default (state = {}, action) => {
 			};
 		}
 		case actions.SHOW_OCCURANCE_RESULT: {
-			console.log('show occ')
 			return {
 				...state,
 				isLoading: false,

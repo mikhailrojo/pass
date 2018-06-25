@@ -6,7 +6,7 @@ export default ({count, error}) => {
 	if (!count) {
 		return null;
 	}
-
+ 
 	return (
 		<div>
 			<SnackbarContent
